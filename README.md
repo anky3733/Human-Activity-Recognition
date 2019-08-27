@@ -1,4 +1,4 @@
-# Human-Activity-Recognition
+Description
 
 This project is to build a model that predicts the human activities such as Walking, Walking_Upstairs, Walking_Downstairs, Sitting, Standing or Laying.
 This dataset is collected from 30 persons(referred as subjects in this dataset), performing different activities with a smartphone to their waists. The data is recorded with the help of sensors (accelerometer and Gyroscope) in that smartphone. This experiment was video recorded to label the data manually.
@@ -9,12 +9,13 @@ prefix 't' in those metrics denotes time.
 suffix 'XYZ' represents 3-axial signals in X , Y, and Z directions.
 
 Feature names
+
 1.	These sensor signals are preprocessed by applying noise filters and then sampled in fixed-width windows(sliding windows) of 2.56 seconds each with 50% overlap. ie., each window has 128 readings.
 
-2.	From Each window, a feature vector was obtianed by calculating variables from the time and frequency domain.
-In our dataset, each datapoint represents a window with different readings
+2.	From Each window, a feature vector was obtained by calculating variables from the time and frequency domain.
+In our dataset, each data point represents a window with different readings
 
-3.	The accelertion signal was saperated into Body and Gravity acceleration signals(tBodyAcc-XYZ and tGravityAcc-XYZ) using some low pass filter with corner frequecy of 0.3Hz.
+3.	The acceleration signal was saperated into Body and Gravity acceleration signals(tBodyAcc-XYZ and tGravityAcc-XYZ) using some low pass filter with corner frequency of 0.3Hz.
 
 4.	After that, the body linear acceleration and angular velocity were derived in time to obtian jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ).
 
@@ -69,7 +70,7 @@ In our dataset, each datapoint represents a window with different readings
 
 Y_Labels(Encoded)
 
-In the dataset, Y_labels are represented as numbers from 1 to 6 as their identifiers.
+•	In the dataset, Y_labels are represented as numbers from 1 to 6 as their identifiers.
 	WALKING as 1
 	WALKING_UPSTAIRS as 2
 	WALKING_DOWNSTAIRS as 3
@@ -77,8 +78,8 @@ In the dataset, Y_labels are represented as numbers from 1 to 6 as their identif
 	STANDING as 5
 	LAYING as 6
 
-Train and test data were saperated
-•	The readings from 70% of the volunteers were taken as trianing data and remaining 30% subjects recordings were taken for test data
+Train and test data were separated
+•	The readings from 70% of the volunteers were taken as training data and remaining 30% subjects recordings were taken for test data
 
 Data
 •	All the data is present in 'UCI_HAR_dataset/' folder in present working directory.
@@ -105,6 +106,7 @@ Quick overview of the dataset :
 4.	Standing
 5.	Sitting
 6.	Lying.
+
 •	Readings are divided into a window of 2.56 seconds with 50% overlapping.
 •	Accelerometer readings are divided into gravity acceleration and body acceleration readings, which has x,y and z components each.
 •	Gyroscope readings are the measure of angular velocities which has x,y and z components.
@@ -116,9 +118,8 @@ Quick overview of the dataset :
 
 Problem Framework
 •	30 subjects(volunteers) data is randomly split to 70%(21) test and 30%(7) train data.
-•	Each datapoint corresponds one of the 6 Activities.
+•	Each data point corresponds one of the 6 Activities.
 
 Problem Statement
 •	Given a new datapoint we have to predict the Activity
-
 
