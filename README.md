@@ -10,12 +10,18 @@ suffix 'XYZ' represents 3-axial signals in X , Y, and Z directions.
 
 Feature names
 1.	These sensor signals are preprocessed by applying noise filters and then sampled in fixed-width windows(sliding windows) of 2.56 seconds each with 50% overlap. ie., each window has 128 readings.
+
 2.	From Each window, a feature vector was obtianed by calculating variables from the time and frequency domain.
 In our dataset, each datapoint represents a window with different readings
+
 3.	The accelertion signal was saperated into Body and Gravity acceleration signals(tBodyAcc-XYZ and tGravityAcc-XYZ) using some low pass filter with corner frequecy of 0.3Hz.
+
 4.	After that, the body linear acceleration and angular velocity were derived in time to obtian jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ).
+
 5.	The magnitude of these 3-dimensional signals were calculated using the Euclidian norm. This magnitudes are represented as features with names like tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag and tBodyGyroJerkMag.
+
 6.	Finally, We've got frequency domain signals from some of the available signals by applying a FFT (Fast Fourier Transform). These signals obtained were labeled with prefix 'f' just like original signals with prefix 't'. These signals are labeled as fBodyAcc-XYZ, fBodyGyroMag etc.,.
+
 7.	These are the signals that we got so far.
 •	tBodyAcc-XYZ
 •	tGravityAcc-XYZ
@@ -34,6 +40,7 @@ In our dataset, each datapoint represents a window with different readings
 •	fBodyAccJerkMag
 •	fBodyGyroMag
 •	fBodyGyroJerkMag
+
 8.	We can esitmate some set of variables from the above signals. ie., We will estimate the following properties on each and every signal that we recoreded so far.
 •	mean(): Mean value
 •	std(): Standard deviation
@@ -52,6 +59,7 @@ In our dataset, each datapoint represents a window with different readings
 •	kurtosis(): kurtosis of the frequency domain signal
 •	bandsEnergy(): Energy of a frequency interval within the 64 bins of the FFT of each window.
 •	angle(): Angle between to vectors.
+
 9.	We can obtain some other vectors by taking the average of signals in a single window sample. These are used on the angle() variable' `
 •	gravityMean
 •	tBodyAccMean
@@ -60,7 +68,8 @@ In our dataset, each datapoint represents a window with different readings
 •	tBodyGyroJerkMean
 
 Y_Labels(Encoded)
-•	In the dataset, Y_labels are represented as numbers from 1 to 6 as their identifiers.
+
+In the dataset, Y_labels are represented as numbers from 1 to 6 as their identifiers.
 	WALKING as 1
 	WALKING_UPSTAIRS as 2
 	WALKING_DOWNSTAIRS as 3
