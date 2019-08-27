@@ -72,10 +72,15 @@ Y_Labels(Encoded)
 
 •	In the dataset, Y_labels are represented as numbers from 1 to 6 as their identifiers.
 	WALKING as 1
+
 	WALKING_UPSTAIRS as 2
+
 	WALKING_DOWNSTAIRS as 3
+
 	SITTING as 4
+
 	STANDING as 5
+
 	LAYING as 6
 
 Train and test data were separated
@@ -83,16 +88,25 @@ Train and test data were separated
 
 Data
 •	All the data is present in 'UCI_HAR_dataset/' folder in present working directory.
+
 	Feature names are present in 'UCI_HAR_dataset/features.txt'
 
+
 	Train Data
+
 o	'UCI_HAR_dataset/train/X_train.txt'
+
 o	'UCI_HAR_dataset/train/subject_train.txt'
+
 o	'UCI_HAR_dataset/train/y_train.txt'
 
+
 	Test Data
+
 o	'UCI_HAR_dataset/test/X_test.txt'
+
 o	'UCI_HAR_dataset/test/subject_test.txt'
+
 o	'UCI_HAR_dataset/test/y_test.txt'
 
 Data Size :
