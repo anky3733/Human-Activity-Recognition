@@ -3,12 +3,12 @@
 This project is to build a model that predicts the human activities such as Walking, Walking_Upstairs, Walking_Downstairs, Sitting, Standing or Laying.
 This dataset is collected from 30 persons(referred as subjects in this dataset), performing different activities with a smartphone to their waists. The data is recorded with the help of sensors (accelerometer and Gyroscope) in that smartphone. This experiment was video recorded to label the data manually.
 
-How data was recorded
+## How data was recorded
 By using the sensors(Gyroscope and accelerometer) in a smartphone, they have captured '3-axial linear acceleration'(tAcc-XYZ) from accelerometer and '3-axial angular velocity' (tGyro-XYZ) from Gyroscope with several variations.
 prefix 't' in those metrics denotes time.
 suffix 'XYZ' represents 3-axial signals in X , Y, and Z directions.
 
-Feature names
+## Feature names
 
 1.	These sensor signals are preprocessed by applying noise filters and then sampled in fixed-width windows(sliding windows) of 2.56 seconds each with 50% overlap. ie., each window has 128 readings.
 
@@ -69,7 +69,7 @@ In our dataset, each data point represents a window with different readings
 •	tBodyGyroMean
 •	tBodyGyroJerkMean
 
-Y_Labels(Encoded)
+## Y_Labels(Encoded)
 
 •	In the dataset, Y_labels are represented as numbers from 1 to 6 as their identifiers.
 	WALKING as 1
@@ -84,10 +84,12 @@ Y_Labels(Encoded)
 
 	LAYING as 6
 
-Train and test data were separated
+##Train and test data were separated
+
 •	The readings from 70% of the volunteers were taken as training data and remaining 30% subjects recordings were taken for test data
 
-Data
+##Data
+
 •	All the data is present in 'UCI_HAR_dataset/' folder in present working directory.
 
 	Feature names are present in 'UCI_HAR_dataset/features.txt'
@@ -110,10 +112,10 @@ o	'UCI_HAR_dataset/test/subject_test.txt'
 
 o	'UCI_HAR_dataset/test/y_test.txt'
 
-Data Size :
+## Data Size :
 27 MB
 
-Quick overview of the dataset :
+## Quick overview of the dataset :
 •	Accelerometer and Gyroscope readings are taken from 30 volunteers(referred as subjects) while performing the following 6 Activities.
 1.	Walking
 2.	WalkingUpstairs
@@ -139,13 +141,13 @@ Quick overview of the dataset :
 
 •	Each window of readings is a datapoint of 561 features.
 
-Problem Framework
+## Problem Framework
 
 •	30 subjects(volunteers) data is randomly split to 70%(21) test and 30%(7) train data.
 
 •	Each data point corresponds one of the 6 Activities.
 
-Problem Statement
+## Problem Statement
 
 •	Given a new datapoint we have to predict the Activity
 
