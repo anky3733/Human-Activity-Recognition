@@ -151,3 +151,22 @@ o	'UCI_HAR_dataset/test/y_test.txt'
 
 •	Given a new datapoint we have to predict the Activity
 
+## Code Execution
+• Create an environment 
+conda env create -f environment.yml
+
+Activate the environment :
+For Windows:
+conda activate my_environment
+
+For macOS and Linux:
+source activate my_environment
+
+Then run the notebooks available in the directory
+
+• Install the packages directly using pip install requirements.txt
+Then run the notebooks available in the directory
+
+
+
+
