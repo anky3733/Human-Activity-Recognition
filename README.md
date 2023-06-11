@@ -157,6 +157,7 @@ o	'UCI_HAR_dataset/test/y_test.txt'
 ### conda env create -f environment.yml
 
 Activate the environment :
+
 For Windows:
 
 ### conda activate my_environment
