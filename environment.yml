@@ -1,0 +1,8 @@
+name: my_environment
+channels:
+  - defaults
+dependencies:
+  - pandas
+  - numpy
+  - keras
+  - scikit-learn
